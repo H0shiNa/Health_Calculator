@@ -1,0 +1,180 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+    margin: 0;
+}
+
+h1 {
+    color: #3f51b5;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #3f51b5;
+    margin-bottom: 20px; 
+}
+
+.back-button {
+    background-color: #f0f4f8;
+    color: #3f51b5;
+    padding: 10px 0; 
+    border: 2px solid #3f51b5; 
+    border-radius: 12px; 
+    cursor: pointer; 
+    width: 30%; 
+    margin: 20px auto; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    transition: background-color 0.3s ease; 
+    text-align: center; 
+}
+
+.back-button:hover {
+    background-color: #b2c9ff; 
+}
+
+#bmiSection, #calorieSection {
+    display: none; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    margin-top: 20px; 
+}
+
+form {
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #cfe2f3; 
+    margin: 0 auto; 
+}
+
+div {
+    margin-bottom: 20px; 
+    width: 100%; 
+    display: flex; 
+    align-items: center; 
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #3f51b5; 
+    font-weight: bold;
+    width: 40%; 
+}
+
+input[type="number"] {
+    width: 60%; 
+    padding: 12px;
+    border: 1px solid #3f51b5; 
+    border-radius: 8px; 
+    box-sizing: border-box;
+    background-color: #e8f5e9; 
+}
+
+select {
+    width: 60%; 
+    padding: 12px;
+    border: 1px solid #3f51b5; 
+    border-radius: 8px; 
+    box-sizing: border-box;
+    background-color: #e8f5e9; 
+    font-family: 'Kanit', sans-serif;
+    font-size: 13px;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%233f51b5"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1.5em;
+}
+
+select:hover {
+    border-color: #66bb6a;
+}
+
+button, .back-button {
+    background-color: #3f51b5; 
+    color: white;
+    padding: 12px 0; 
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 20%; 
+    text-align: center; 
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin: 10px 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+button:hover, .back-button:hover {
+    background-color: #b2c9ff; 
+}
+
+#result, #calorieResult {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #3f51b5; 
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+#result, #calorieResult {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    margin: 20px auto; 
+    padding: 10px; 
+    width: 80%; 
+    max-width: 800px; 
+}
+
+.gender-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.gender-button {
+    background-color: #e3f2fd; 
+    color: #1976d2; 
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin: 0 10px; 
+}
+
+.gender-button:hover {
+    background-color: #bbdefb; 
+}
+
+.gender-button.selected {
+    background-color: #3f51b5; 
+    color: white; 
+}
